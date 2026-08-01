@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InterFaceX-portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- FontAwesome icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="assert/favicon.png.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <!-- Top: Logo & Name -->
+        <div class="brand-section">
+          <a href="#" class="brand-logo">
+            <img src="assert/logo.png" alt="InterfaceX Logo" />
+            <span class="brand-name"
+              >Interface<span class="highlight">X</span></span
+            >
+          </a>
+        </div>
+
+        <!-- Bottom: Menu Links + Resume Button Together -->
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1jYSlugwUxzymhN-li8B9q1niSdV_Ef57/view?usp=sharing"
+                download="InterfaceX_Resume"
+                target="_blank"
+                class="btn-resume"
+              >
+                <i class="fa-solid fa-download"></i> Resume
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Mobile hamburger menu button -->
+
+      <div class="hamburger">
+        <span class="bar"> </span>
+        <span class="bar"> </span>
+        <span class="bar"> </span>
+      </div>
+      </header>
+
+      <!-- about section -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <!-- section heading -->
+          <div class="section-title">
+            <h2>About <span class="highlight">Me</span></h2>
+            <p class="subtitle">
+              Crafting, Modern, Responsive & High-performance Web Experience
+            </p>
+          </div>
+          <div class="about-content">
+            <!-- left side profile -->
+            <div class="about-card">
+              <div class="card-glow"></div>
+              <div class="profile-img-box">
+                <img
+                  src="assert/sk1.png"
+                  alt="developer profile"
+                  id="profile-img"
+                />
+              </div>
+              <!-- <div class="card-badge">
+                <span class="status-dot"></span> Available for project
+              </div> -->
+            </div>
+            <!-- Right side  bio and details -->
+
+            <div class="about-text">
+              <h3>
+                Hi, i'm a<span id="typing-text"></span
+                ><span class="cursor"></span>
+              </h3>
+              <p class="bio">
+                Welcome to<strong>InterfaceX</strong>! I'm a passionate frontend
+                developer who specializes in building fast, responsive, and
+                visually stunning web applications. My focus is on converting
+                business ideas into reality using clean code, smooth UI/UX ,and
+                modern web technologies (HTML,CSS JAVASCRIPT,REACT).
+              </p>
+
+              <!-- key stats high -->
+
+              <div class="stats-grid">
+                <div class="stat-card">
+                  <h4>1</h4>
+                  <p>Year Experience</p>
+                </div>
+                <div class="stat-card">
+                  <h4>15+</h4>
+                  <p>projects Built</p>
+                </div>
+                <div class="stat-card">
+                  <h4>100%</h4>
+                  <p>Code Quality</p>
+                </div>
+              </div>
+              <!-- core teach stack badge -->
+              <div class="tech-stack">
+                <span class="tech-badge">Html5</span>
+                <span class="tech-badge">Css</span>
+                <span class="tech-badge">Tailwind</span>
+                <span class="tech-badge">Javascript(ES6+)</span>
+                <span class="tech-badge"> React.js</span>
+                 <span class="tech-badge">Git/Github</span>
+              </div>
+           
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- ==========================================================
+     PROJECTS SECTION (Frontend Focused)
+     ========================================================== -->
+<section id="projects" class="projects-section">
+  <div class="container">
+    <!-- Section Heading -->
+    <div class="section-title">
+      <h2>Featured <span class="highlight">Projects</span></h2>
+      <p class="subtitle">
+        Interactive, Responsive & Modern Web Applications Built with Modern Frontend Tech
+      </p>
+    </div>
+
+    <!-- Frontend Category Filter Tabs -->
+    <div class="filter-container">
+      <button class="filter-btn " data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="react">React.js</button>
+      <button class="filter-btn" data-filter="javascript">JavaScript</button>
+      <button class="filter-btn" data-filter="html-css">HTML5 & CSS3</button>
+    </div>
+
+    <!-- Projects Grid Layout -->
+    <div class="projects-grid">
+      
+      <!-- Project Card 1: React Project -->
+      <div class="project-card" data-category="javascript">
+        <div class="project-img-wrapper">
+          <img src="assert/number sc.png" alt="number" />
+          <div class="project-overlay">
+            <span class="category-tag">Number-Shooter</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Number-Shooter</h3>
+          <p class="project-desc">
+           A beginner-friendly number game where users interact with numbers and test their speed and accuracy. Built to practice JavaScript logic, DOM manipulation, and event handling.
+          </p>
+          <div class="project-tech">
+            <span>html</span>
+            <span> CSS</span>
+            <span>javascript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/05shaileshk/Number-Shooter" target="_blank" class="btn-link">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+            <a href="https://numbershooter.netlify.app/" target="_blank" class="btn-link btn-primary">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 2: JS Project -->
+      <div class="project-card" data-category="javascript">
+        <div class="project-img-wrapper">
+          <img src="assert/school.png" alt="school" />
+          <div class="project-overlay">
+            <span class="category-tag">School</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title"> Bright Future International School</h3>
+          <p class="project-desc">
+           Bright Future International School - Website Project A modern, fully responsive, and feature-rich school website designed and developed using HTML5, CSS3, and Vanilla JavaScript.  A high-performance personal portfolio featuring custom typing effects, interactive category filters, and smooth CSS keyframe animations.
+          </p>
+          <div class="project-tech">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Vanilla JS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/05shaileshk/Bright-Future-International-School"  target="_blank" class="btn-link">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+            <a href="https://brightinternation.netlify.app/" target="_blank" class="btn-link btn-primary">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+       <!-- Project Card 3: JS Project -->
+      <div class="project-card" data-category="javascript">
+        <div class="project-img-wrapper">
+          <img src="assert/resturant.png" alt="restaurant" />
+          <div class="project-overlay">
+            <span class="category-tag">Restaurant</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title"> Restaurant</h3>
+          <p class="project-desc">
+           A responsive restaurant website featuring a modern UI, attractive food sections, menu browsing, and a user-friendly layout designed to provide a smooth dining experience.
+          </p>
+          <div class="project-tech">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Vanilla JS</span>
+          </div>
+          <div class="project-links">
+            <a href=https://github.com/05shaileshk/Restaurant  target="_blank" class="btn-link">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+            <a href=https://webrestaurantcom.netlify.app/ target="_blank" class="btn-link btn-primary">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 3: JS Project -->
+      <div class="project-card" data-category="javascript">
+        <div class="project-img-wrapper">
+          <img src="assert/weather.png" alt="weather" />
+          <div class="project-overlay">
+            <span class="category-tag">Weather-App</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title"> Weather-App</h3>
+          <p class="project-desc">
+        A beginner-level weather website that displays weather information with a simple and user-friendly interface. Built to practice HTML, CSS, JavaScript, and basic API integration.
+          </p>
+          <div class="project-tech">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Vanilla JS</span>
+          </div>
+          <div class="project-links">
+            <a href=https://github.com/05shaileshk/Weather-App target="_blank" class="btn-link">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+            <a href=https://weatherstatelive.netlify.app/ target="_blank" class="btn-link btn-primary">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 3: HTML/CSS Responsive Project -->
+      <div class="project-card" data-category="html-css">
+        <div class="project-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80" alt="Modern Tech Landing Page" />
+          <div class="project-overlay">
+            <span class="category-tag">HTML5 & CSS3</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">edthapa</h3>
+          <p class="project-desc">
+            A beginner-level educational website built using HTML and CSS, focusing on a clean layout, responsive design, and attractive user interface.
+          </p>
+          <div class="project-tech">
+            <span>HTML5</span>
+            <span>CSS Grid</span>
+            <span>Flexbox</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/05shaileshk/thapaedu" target="_blank" class="btn-link">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+           
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 4: HTML/CSS Responsive Project -->
+      <div class="project-card" data-category="html-css">
+        <div class="project-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80" alt="Modern Tech Landing Page" />
+          <div class="project-overlay">
+            <span class="category-tag">HTML5 & CSS3</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">School demo</h3>
+          <p class="project-desc">
+            Fully responsive agency product page styled with Flexbox, CSS Grid, custom neon glow effects, and multi-device support.
+          </p>
+          <div class="project-tech">
+            <span>HTML5</span>
+            <span>CSS Grid</span>
+            <span>Flexbox</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/05shaileshk/schooldemo" target="_blank" class="btn-link">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+            <!-- <a href="https://example.com" target="_blank" class="btn-link btn-primary">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a> -->
+          </div>
+        </div>
+      </div>
+
+      
+       </div>
+  </div>
+  <!-- 🔽 VIEW MORE / EXPAND BUTTON WITH ICON 🔽 -->
+       <div class="view-more-container">
+      <button id="view-more-btn" class="btn-view-more">
+        <span class="btn-text">View All Projects</span>
+        <i class="fa-solid fa-chevron-down toggle-icon"></i>
+      </button>
+    </div>
+</section>
+
+<!-- Skill section -->
+
+<section id="skills" class="skills-section">
+  <div class="container">
+    <!-- section heading -->
+     <div class="section-title">
+      <h2>My Tech <span class="highlight">Skills</span></h2>
+      <p class="subtitle">
+        technologies , Frameworks , and tools I use to bring idea to life
+      </p>
+     </div>
+     <!-- skill grid layout -->
+      <div class="skills-grid">
+        <!-- skill card 1: HTMLS -->
+         <div class="skill-card">
+        <div class="skill-header">
+          <div class="skill-info">
+            <i class="fa-brands fa-html5 skill-icon html-icon"></i>
+            <span class="skill-name">HTML5</span>
+          </div>
+          <span class="skill-percent">95%</span>
+        </div>
+        <div class="progress-bar-bg">
+          <div class="progress-fill" style="--target-width: 95%;"></div>
+        </div>
+      </div>
+      <!-- Skill Card 2: CSS3 / Modern Layouts -->
+      <div class="skill-card">
+        <div class="skill-header">
+          <div class="skill-info">
+            <i class="fa-brands fa-css3-alt skill-icon css-icon"></i>
+            <span class="skill-name">CSS3 & Flex/Grid</span>
+          </div>
+          <span class="skill-percent">90%</span>
+        </div>
+        <div class="progress-bar-bg">
+          <div class="progress-fill" style="--target-width: 90%;"></div>
+        </div>
+      </div>
+      <!-- Skill Card 3: JavaScript -->
+      <div class="skill-card">
+        <div class="skill-header">
+          <div class="skill-info">
+            <i class="fa-brands fa-js skill-icon js-icon"></i>
+            <span class="skill-name">JavaScript (ES6+)</span>
+          </div>
+          <span class="skill-percent">85%</span>
+        </div>
+        <div class="progress-bar-bg">
+          <div class="progress-fill" style="--target-width: 85%;"></div>
+        </div>
+      </div>
+
+      <!-- Skill Card 4: React.js -->
+      <div class="skill-card">
+        <div class="skill-header">
+          <div class="skill-info">
+            <i class="fa-brands fa-react skill-icon react-icon"></i>
+            <span class="skill-name">React.js</span>
+          </div>
+          <span class="skill-percent">50%</span>
+        </div>
+        <div class="progress-bar-bg">
+          <div class="progress-fill" style="--target-width: 80%;"></div>
+        </div>
+      </div>
+
+      <!-- Skill Card 5: Tailwind CSS -->
+      <div class="skill-card">
+        <div class="skill-header">
+          <div class="skill-info">
+            <i class="fa-solid fa-code skill-icon tailwind-icon"></i>
+            <span class="skill-name">Tailwind CSS</span>
+          </div>
+          <span class="skill-percent">85%</span>
+        </div>
+        <div class="progress-bar-bg">
+          <div class="progress-fill" style="--target-width: 85%;"></div>
+        </div>
+      </div>
+
+      <!-- Skill Card 6: Git & GitHub -->
+      <div class="skill-card">
+        <div class="skill-header">
+          <div class="skill-info">
+            <i class="fa-brands fa-github skill-icon git-icon"></i>
+            <span class="skill-name">Git & GitHub</span>
+          </div>
+          <span class="skill-percent">88%</span>
+        </div>
+        <div class="progress-bar-bg">
+          <div class="progress-fill" style="--target-width: 88%;"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+      </div>
+  </div>
+</section>
+
+<!-- contact section -->
+
+<section class="contact-section" id="contact">
+  <div class="container">
+
+    <!-- section title -->
+
+    <div class="section-title">
+      <h2>Get In <span class="highlight">Touch</span></h2>
+      <p class="subtitle">
+        Have a project in mind or want to collaborate? fell free to reach out!
+      </p>
+    
+    <div class="contact-wrapper">
+
+      <!-- left side:contact info -->
+
+      <div class="contact-info ">
+        <h3 class="info-heading">Let's talk about everything!</h3>
+        <p class="info-desc">
+          Don't like forms? Send me an email or reach out through social networks 👋
+        </p>
+        <div class="info-cards">
+          <div class="info-card">
+            <div class="icon-box">
+             <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="info-text">
+              <span>Mail Me
+              </span>
+             <a href="mailto:05shaileshk@gmail.com">05shaileshk@gmail.com</a>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="icon-box">
+              <i class="fa-solid fa-location-dot"></i>
+              </div>
+
+              <div class="info-text">
+              <span>Location</span>
+            <p>India (Open for Remote)</p>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- social media -->
+         <!-- Social Media Links -->
+        <div class="social-links">
+          <a href="https://github.com/05shaileshk" target="_blank" rel="noopener noreferrer"aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https:/www.linkedin.com/in/shailesh-kumar-776431198" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+         <a href="https://www.freelancer.in/u/sinhask" target="_blank" rel="noopener noreferrer"aria-label="Freelancer">
+        <i class="fa-solid fa-briefcase"></i> 
+        </a>
+      </div>
+    </div>
+
+    <!-- Right side: form -->
+     <div class="contact-form-card">
+      <form action="" id="contact-form" novalidate>
+
+        <!-- name input -->
+
+        <div class="input-group">
+            <input type="text" id="user_name" required placeholder=" " />
+            <label for="user_name"><i class="fa-regular fa-user"></i> Your Name</label>
+            <span class="focus-border"></span>
+          </div>
+          <!-- Email Input -->
+          <div class="input-group">
+            <input type="email" id="user_email" required placeholder=" " />
+            <label for="user_email"><i class="fa-regular fa-envelope"></i> Your Email</label>
+            <span class="focus-border"></span>
+          </div>
+          <!-- Subject Input -->
+          <div class="input-group">
+            <input type="text" id="subject" required placeholder=" " />
+            <label for="subject"><i class="fa-solid fa-pen"></i> Subject</label>
+            <span class="focus-border"></span>
+          </div>
+          <!-- Message Textarea -->
+          <div class="input-group">
+            <textarea id="user_message" rows="4" required placeholder=" "></textarea>
+            <label for="user_message"><i class="fa-regular fa-comment-dots"></i> Your Message</label>
+            <span class="focus-border"></span>
+          </div>
+          <!-- Submit Button -->
+          <button type="submit" class="submit-btn" id="submit-btn">
+            <span class="btn-text">Send Message</span>
+            <i class="fa-solid fa-paper-plane send-icon"></i>
+          </button>
+          <!-- Status Message Alert -->
+          <div id="form-response" class="form-response"></div>
+      </form>
+     </div>
+
+  </div>
+  
+</section>
+
+     <!-- footer section -->
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- two row -->
+
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="#" class="footer-logo">
+          Interface<span>X</span>
+        </a>
+        <p class="footer-desc">
+          Building high-performance, interactive, and responsive web experience
+        </p>
+      </div>
+
+      <!-- quick navigation -->
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+         <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- social media -->
+       <div class="footer-socials">
+        <h4>Connect With Me</h4>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/shailesh-kumar-776431198" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/05shaileshk" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.freelancer.in/u/sinhask" target="_blank" rel="noopener noreferrer"aria-label="Freelancer">
+        <i class="fa-solid fa-briefcase"></i> 
+        </a>
+          <a href="mailto:05shaileshk@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- bottom row -->
+
+   <div class="footer-bottom">
+      <p>&copy; 2026 <span>InterfaceX</span>. All rights reserved.</p>
+      <a href="#" class="back-to-top" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+   </div>
+</footer>
+    <script src="portfolio.js"></script>
+  </body>
+</html>
